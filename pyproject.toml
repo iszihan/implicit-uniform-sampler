@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ImplicitUniformSampler"
+version = "0.1.0"
+description = "A module for uniformly sampling implicit surface in PyTorch."
+readme = "README.md"
+authors = [
+    {name = "Selena Ling", email = "selena.ling@mail.utoronto.ca"},
+    {name = "Abhishek Madan", email = "amadan@cs.toronto.edu"},
+]
+license = {text = "MIT"}
+dependencies = [
+    "torch",
+    "numpy",
+]
+requires-python = ">=3.8"
+
+[tool.setuptools]
+packages = ["ImplicitUniformSampler"]
+
+[tool.setuptools.package-data]
+ImplicitUniformSampler = ["*.py"]
+
+[tool.setuptools.dynamic]
+version = {attr = "ImplicitUniformSampler.__version__"}
+
+[project.urls]
+"Homepage" = "https://github.com/iszihan/implicit-uniform-sampler"
