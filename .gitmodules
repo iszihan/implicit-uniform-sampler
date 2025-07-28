@@ -1,0 +1,3 @@
+[submodule "examples/sdfstudio"]
+	path = examples/sdfstudio
+	url = https://github.com/iszihan/sdfstudio.git
